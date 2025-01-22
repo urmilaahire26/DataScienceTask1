@@ -1,4 +1,4 @@
-# Importing necessary libraries
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -13,8 +13,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_selection import RFE
 from sklearn.metrics import confusion_matrix, classification_report, roc_auc_score, roc_curve
 
-# Load dataset (you can replace with your own dataset)
-# Example dataset: Pima Indians Diabetes Database (available online)
 url = 'https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv'
 columns = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome']
 data = pd.read_csv(url, header=None, names=columns)
